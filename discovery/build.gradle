@@ -1,6 +1,5 @@
 plugins {
-    id 'java'
-    id 'maven-publish'
+    id 'com.okta.developer.docker_microservices.conventions'
 }
 
 group = 'com.okta.developer.docker_microservices'
@@ -15,23 +14,12 @@ repositories {
 }
 
 dependencies {
-    implementation platform('org.springframework.boot:spring-boot-dependencies:2.1.3.RELEASE')
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR1')
-
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
 
     implementation 'javax.xml.bind:jaxb-api:2.3.1'
     implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.2'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from(components.java)
-        }
-    }
 }
 
 tasks.withType(JavaCompile) {
