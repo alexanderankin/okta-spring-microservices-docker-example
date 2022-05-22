@@ -1,4 +1,4 @@
-rootProject.name = 'parent-pom'
+rootProject.name = 'spring-microservices-security'
 include 'config'
 include 'discovery'
 include 'school-service'
