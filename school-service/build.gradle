@@ -5,12 +5,6 @@ plugins {
 group = 'com.okta.developer.docker_microservices'
 version = '0.0.1-SNAPSHOT'
 description = 'school-service'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
 
 dependencies {
     annotationProcessor 'org.projectlombok:lombok:' + property('lombokVersion')

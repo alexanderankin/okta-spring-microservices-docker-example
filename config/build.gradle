@@ -5,13 +5,6 @@ plugins {
 group = 'com.okta.developer.docker_microservices'
 version = '0.0.1-SNAPSHOT'
 description = 'config'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    maven { url('https://repo.spring.io/milestone') }
-}
 
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-config-server'
