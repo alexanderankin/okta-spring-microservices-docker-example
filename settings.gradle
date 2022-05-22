@@ -1,0 +1,5 @@
+rootProject.name = 'parent-pom'
+include 'config'
+include 'discovery'
+include 'school-service'
+include 'school-ui'
