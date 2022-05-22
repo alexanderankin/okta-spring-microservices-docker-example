@@ -23,7 +23,3 @@ dependencies {
     runtimeOnly 'com.h2database:h2:1.4.197'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
